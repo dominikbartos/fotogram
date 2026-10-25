@@ -54,7 +54,7 @@ main {
 
     h1 {
         color: white;
-        font-family:'Figtree';
+        font-family: 'Figtree';
         font-style: normal;
         font-weight: 800;
     }
@@ -68,33 +68,34 @@ main {
     gap: 5px;
     width: 100%;
 }
+
 .images>img {
     width: 150px;
     height: 150px;
     border-radius: 16px;
-    border:rgba(18, 70, 88, 1) solid 2px;
+    border: rgba(18, 70, 88, 1) solid 2px;
     object-fit: cover;
 }
 
-.images>img:hover{
+.images>img:hover {
     border: rgb(8, 167, 219) solid 2px;
     cursor: pointer;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:rgba(9, 33, 42, 1) ;
-    gap:5px;
+    background-color: rgba(9, 33, 42, 1);
+    gap: 5px;
     padding: 20px max(120px, (50% - 720px));
     border-top-left-radius: 40%;
     border-top-right-radius: 40%;
     height: 120px;
 }
 
-.upper{
+.upper {
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -105,9 +106,104 @@ footer{
     font-size: 1rem;
 }
 
-.copyright{
+.copyright {
     color: rgba(150, 150, 150, 1);
     font-family: 'Figtree';
     font-weight: 400;
     font-size: 14px;
+}
+
+.dialog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+dialog {
+    position: relative;
+    width: 680px;
+    height: 680px;
+    align-self: center;
+    justify-self: center;
+    background-color: rgba(6, 23, 30, 1);
+    border-radius: 40px;
+    border: none;
+
+    h2{
+        color: white;
+        font-size: 1.5rem;
+        font-family: 'Figtree';
+        font-weight: 700;
+    }
+
+    p{
+        color: white;
+        font-size: 1rem;
+        font-family: 'Figtree';
+        font-weight: 500;
+    }
+
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        border-radius: 50%;
+        border: none;
+        width: 60px;
+        height: 60px;
+        background-color: rgba(253, 91, 79, 0.1);
+    }
+
+    button:hover{
+        background-color: rgba(253, 91, 79, 0.2);
+    }
+
+    .close-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 590px;
+        right: 70px;
+        background-color: transparent;
+        width: 30px;
+        height: 30px;
+
+        img{
+            align-self: center;
+            justify-self:center ;
+        }
+
+    }
+
+    .close-btn:hover{
+        background-color: rgb(14, 112, 148);
+    }
+
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1.2px);
+}
+
+.dialog_footer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.dialog-container>img {
+    width: 560px;
+    height: 374px;
+    object-fit: cover;
 }
