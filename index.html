@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="shortcut icon" href="./assets/icons/Favicon.svg" type="image/x-icon">
+    <title>Fotogram</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/icons/Favicon.svg" alt="fotogram_icon">
+        <div class="logo-letters"><img src="./assets/icons/header-letters/F.svg" alt="">
+            <img src="./assets/icons/header-letters/O.svg" alt="">
+            <img src="./assets/icons/header-letters/T.svg" alt="">
+            <img src="./assets/icons/header-letters/O.svg" alt="">
+            <img class="g" src="./assets/icons/header-letters/G.svg" alt="">
+            <img src="./assets/icons/header-letters/R.svg" alt="">
+            <img src="./assets/icons/header-letters/A.svg" alt="">
+            <img src="./assets/icons/header-letters/M.svg" alt="">
+        </div>
+    </header>
+
+    <main>
+        <h1>Your personal photo album</h1>
+        <div class="images">
+            <img onclick="openDialog(0)" src="./assets/images/img1.jpg" alt="photo">
+            <img onclick="openDialog(1)" src="./assets/images/img2.jpg" alt="photo">
+            <img onclick="openDialog(2)" src="./assets/images/img3.jpg" alt="photo">
+            <img onclick="openDialog(3)" src="./assets/images/img4.jpg" alt="photo">
+            <img onclick="openDialog(4)" src="./assets/images/img5.jpg" alt="photo">
+            <img onclick="openDialog(5)" src="./assets/images/img6.jpg" alt="photo">
+            <img onclick="openDialog(6)" src="./assets/images/img7.jpg" alt="photo">
+            <img onclick="openDialog(7)" src="./assets/images/img8.jpg" alt="photo">
+            <img onclick="openDialog(8)" src="./assets/images/img9.jpg" alt="photo">
+            <img onclick="openDialog(9)" src="./assets/images/img10.jpg" alt="photo">
+            <img onclick="openDialog(10)" src="./assets/images/img11.jpg" alt="photo">
+            <img onclick="openDialog(11)" src="./assets/images/img12.jpg" alt="photo">
+        </div>
+    </main>
+    <dialog id="info_popUp">
+        <h2>Test</h2>
+        <img id="dialog_img" src="" alt="">
+        <button><img  src="./assets/icons/left.svg" alt=""></button>
+        <p>Test p</p>
+        <button><img src="./assets/icons/right.svg" alt=""></button>
+        <button onclick="closeDialog()">Close</button>
+    </dialog>
+
+
+    <footer>
+        <div class="upper"><img src="./assets/icons/dec.icon.svg" alt="">
+            <p>Developer<br>Akademie</p>
+        </div>
+        <div class="copyright">
+            © 2023 Developer Akademie GmbH
+        </div>
+    </footer>
+</body>
+
+<script src="./script.js"></script>
+
+</html>
