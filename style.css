@@ -130,7 +130,7 @@ dialog {
     height: 680px;
     align-self: center;
     justify-self: center;
-    background-color: rgba(6, 23, 30, 1);
+    background-color: rgb(9, 36, 48);
     border-radius: 40px;
     border: none;
 
@@ -150,6 +150,7 @@ dialog {
 
     button{
         display: flex;
+        cursor: pointer;
         justify-content: center;
         align-items: center;
         padding: 5px;
@@ -162,6 +163,11 @@ dialog {
 
     button:hover{
         background-color: rgba(253, 91, 79, 0.2);
+    }
+
+    button:active{
+        background-color: rgba(253, 91, 79, 0.4);
+    }
     }
 
     .close-btn{
@@ -195,9 +201,9 @@ dialog::backdrop {
 
 .dialog_footer {
     display: flex;
-    width: 100%;
+    width: 260px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
