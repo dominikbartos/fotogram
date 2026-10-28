@@ -5,10 +5,12 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
     background-color: rgba(6, 23, 30, 1);
-    width: 100vw;
-    height: 100vh;
 }
+
 
 header {
     display: flex;
@@ -43,12 +45,11 @@ header>img {
 
 
 main {
+    flex: 1;
     display: flex;
     flex-direction: column;
     padding: 20px max(120px, (50% - 720px));
-    width: 100%;
     gap: 80px;
-    height: 100%;
     justify-content: center;
     align-items: center;
 
@@ -57,6 +58,7 @@ main {
         font-family: 'Figtree';
         font-style: normal;
         font-weight: 800;
+        font-size: 56px;
     }
 }
 
@@ -126,7 +128,7 @@ footer {
 
 dialog {
     position: relative;
-    width: 680px;
+    width: clamp(280px,60vw,680px);
     height: 680px;
     align-self: center;
     justify-self: center;
@@ -134,21 +136,21 @@ dialog {
     border-radius: 40px;
     border: none;
 
-    h2{
+    h2 {
         color: white;
         font-size: 1.5rem;
         font-family: 'Figtree';
         font-weight: 700;
     }
 
-    p{
+    p {
         color: white;
         font-size: 1rem;
         font-family: 'Figtree';
         font-weight: 500;
     }
 
-    button{
+    button {
         display: flex;
         cursor: pointer;
         justify-content: center;
@@ -161,36 +163,36 @@ dialog {
         background-color: rgba(253, 91, 79, 0.1);
     }
 
-    button:hover{
+    button:hover {
         background-color: rgba(253, 91, 79, 0.2);
     }
 
-    button:active{
+    button:active {
         background-color: rgba(253, 91, 79, 0.4);
     }
+}
+
+.close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 590px;
+    right: 70px;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+
+    img {
+        align-self: center;
+        justify-self: center;
     }
 
-    .close-btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        bottom: 590px;
-        right: 70px;
-        background-color: transparent;
-        width: 30px;
-        height: 30px;
+}
 
-        img{
-            align-self: center;
-            justify-self:center ;
-        }
-
-    }
-
-    .close-btn:hover{
-        background-color: rgb(14, 112, 148);
-    }
+.close-btn:hover {
+    background-color: rgb(14, 112, 148);
+}
 
 dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.5);
@@ -207,7 +209,8 @@ dialog::backdrop {
 }
 
 .dialog-container>img {
-    width: 560px;
+    width: clamp(250px,50vw,560px);
     height: 374px;
     object-fit: cover;
 }
+
