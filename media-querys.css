@@ -1,0 +1,139 @@
+@media screen and (min-width:320px) and (max-width:479px) {
+    header {
+        justify-content: center;
+    }
+
+
+    header>img {
+        width: 31px;
+        height: 30px;
+    }
+
+    .logo-letters {
+        height: 20px;
+    }
+
+    main {
+        padding: 50px max(20px, (50% - 720px));
+    }
+
+    .images>img {
+        width: 120px;
+        height: 120px;
+    }
+
+    main>h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    h2{
+        align-self: flex-start;
+        position: relative;
+        left: 20px;
+    }
+
+    footer {
+        gap: 15px;
+        padding: 5px max(120px, (50% - 720px));
+    }
+
+    .copyright {
+        width: 225px;
+    }
+
+    dialog {
+        height: 600px;
+    }
+
+    .dialog-container {
+        gap: 30px;
+    }
+
+    .dialog_footer {
+        justify-content: space-around;
+
+    }
+
+    .dialog-container>.img-ten {
+        object-position: 25% 50%;
+    }
+
+    .close-btn {
+        bottom: 530px;
+        right: 25px;
+
+    }
+}
+
+
+@media screen and (min-width:480px) and (max-width:769px) {
+
+    header {
+        justify-content: center;
+    }
+
+
+    header>img {
+        width: 31px;
+        height: 30px;
+    }
+
+    .logo-letters {
+        height: 20px;
+    }
+
+    main {
+        padding: 50px max(20px, (50% - 720px));
+    }
+
+    .images>img {
+        width: 120px;
+        height: 120px;
+    }
+
+    main>h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    footer {
+        gap: 15px;
+        padding: 5px max(120px, (50% - 720px));
+    }
+
+    .copyright {
+        width: 225px;
+    }
+
+    dialog {
+        height: 600px;
+    }
+
+    .dialog-container {
+        gap: 30px;
+    }
+
+    .dialog_footer {
+        justify-content: space-around;
+
+    }
+
+    .dialog-container>.img-ten {
+        object-position: 25% 50%;
+    }
+
+    .close-btn {
+        bottom: 530px;
+        right: 25px;
+        
+
+    }
+}
+
+@media screen and (min-width:770px) and (max-width:935px) {
+    main>h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+}
