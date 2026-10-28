@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="media-querys.css">
     <link rel="shortcut icon" href="./assets/icons/Favicon.svg" type="image/x-icon">
     <title>Fotogram</title>
 </head>
@@ -27,41 +28,41 @@
     <main>
         <h1>Your personal photo album</h1>
         <div class="images">
-            <img onclick="openDialog(0)" src="./assets/images/img1.jpg" alt="photo">
-            <img onclick="openDialog(1)" src="./assets/images/img2.jpg" alt="photo">
-            <img onclick="openDialog(2)" src="./assets/images/img3.jpg" alt="photo">
-            <img onclick="openDialog(3)" src="./assets/images/img4.jpg" alt="photo">
-            <img onclick="openDialog(4)" src="./assets/images/img5.jpg" alt="photo">
-            <img onclick="openDialog(5)" src="./assets/images/img6.jpg" alt="photo">
-            <img onclick="openDialog(6)" src="./assets/images/img7.jpg" alt="photo">
-            <img onclick="openDialog(7)" src="./assets/images/img8.jpg" alt="photo">
-            <img onclick="openDialog(8)" src="./assets/images/img9.jpg" alt="photo">
-            <img onclick="openDialog(9)" src="./assets/images/img10.jpg" alt="photo">
-            <img onclick="openDialog(10)" src="./assets/images/img11.jpg" alt="photo">
-            <img onclick="openDialog(11)" src="./assets/images/img12.jpg" alt="photo">
+            <img onclick="openDialog(0), onTen()" src="./assets/images/img1.jpg" alt="photo">
+            <img onclick="openDialog(1), onTen()" src="./assets/images/img2.jpg" alt="photo">
+            <img onclick="openDialog(2), onTen()" src="./assets/images/img3.jpg" alt="photo">
+            <img onclick="openDialog(3), onTen()" src="./assets/images/img4.jpg" alt="photo">
+            <img onclick="openDialog(4), onTen()" src="./assets/images/img5.jpg" alt="photo">
+            <img onclick="openDialog(5), onTen()" src="./assets/images/img6.jpg" alt="photo">
+            <img onclick="openDialog(6), onTen()" src="./assets/images/img7.jpg" alt="photo">
+            <img onclick="openDialog(7), onTen()" src="./assets/images/img8.jpg" alt="photo">
+            <img onclick="openDialog(8), onTen()" src="./assets/images/img9.jpg" alt="photo">
+            <img onclick="openDialog(9), onTen()" src="./assets/images/img10.jpg" alt="photo">
+            <img onclick="openDialog(10), onTen()" src="./assets/images/img11.jpg" alt="photo">
+            <img onclick="openDialog(11), onTen()" src="./assets/images/img12.jpg" alt="photo">
         </div>
     </main>
     <dialog id="info_popUp">
         <section class="dialog-container" onclick="dialogClick()">
             <h2 id="title"></h2>
             <img id="dialog_img" src="" alt="">
-            <div class="dialog_footer"><button title="Previous" onclick="lastImg()"><img src="./assets/icons/left.svg" alt=""></button>
+            <div class="dialog_footer"><button title="Previous" onclick="lastImg(), onTen()"><img src="./assets/icons/left.svg" alt=""></button>
                 <p id="counter"></p>
-                <butto title="Next" onclick="nextImg()"><img src="./assets/icons/right.svg" alt=""></button>
-                <button title="Close" class="close-btn" onclick="closeDialog()"><img src="./assets/icons/close.svg" alt=""></button>
+                <button title="Next" onclick="nextImg(), onTen()"><img src="./assets/icons/right.svg" alt=""></button>
+                    <button title="Close" class="close-btn" onclick="closeDialog(), onTen()"><img src="./assets/icons/close.svg" alt=""></button>
+                </div>
+            </section>
+        </dialog>
+        
+        <footer>
+            <div class="upper"><img src="./assets/icons/dec.icon.svg" alt="">
+                <p>Developer<br>Akademie</p>
             </div>
-        </section>
-    </dialog>
-
-
-    <footer>
-        <div class="upper"><img src="./assets/icons/dec.icon.svg" alt="">
-            <p>Developer<br>Akademie</p>
-        </div>
-        <div class="copyright">
-            © 2023 Developer Akademie GmbH
-        </div>
-    </footer>
+            <div class="copyright">
+                © 2023 Developer Akademie GmbH
+            </div>
+        </footer>
+        
 </body>
 
 <script src="./script.js"></script>
