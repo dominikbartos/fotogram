@@ -24,7 +24,7 @@ let imageNames = ['Alaska',
     'Night View',
     'Snow Bunting',
     'Snow Leopard',
-    'Top of the Mountain',
+    'Mountains',
     'A Snow Tree'];
 let photos = document.getElementsByClassName('photos');
 let counterArray = ['1/12', '2/12', '3/12', '4/12', '5/12', '6/12', '7/12', '8/12', '9/12', '10/12', '11/12', '12/12'];
@@ -39,6 +39,7 @@ function openDialog(num) {
     counter.innerHTML = counterArray[num];
     dialogIndex = num;
     console.log(dialogIndex);
+
 }
 
 
@@ -60,11 +61,11 @@ function nextImg() {
         dialogImg.src = images[dialogIndex];
         photoTitle.innerHTML = imageNames[dialogIndex];
         counter.innerHTML = counterArray[dialogIndex];
-        
+
         console.log(dialogIndex);
     }
     event.stopPropagation();
-    
+
 }
 function lastImg() {
     if (dialogIndex == (images.length - 12)) {
@@ -82,10 +83,19 @@ function lastImg() {
         counter.innerHTML = counterArray[dialogIndex];
         console.log(dialogIndex);
     }
-    
+
     event.stopPropagation();
 }
 
-function dialogClick (){
+function dialogClick() {
     event.stopPropagation();
+}
+
+function onTen() {
+    if ( photoTitle.innerHTML == 'Snow Leopard') {
+        dialogImg.classList.add('img-ten');
+    }
+    else {
+        dialogImg.classList.remove('img-ten');
+    }
 }
